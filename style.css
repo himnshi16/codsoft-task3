@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+} 
+
+.heading{
+   background-color: blue;
+    position: absolute;
+    margin-top: -600px;
+    display: flex;  
+    justify-content: center;
+}
+.navbar{
+    
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+.calculator {
+    background-color: paleturquoise;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(154, 60, 76, 0.998);
+    max-width: 400px;
+    width: 100%;
+}
+
+#display {
+    width: 95%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button.number {
+    background-color: #babd88;
+    color: #fff;
+}
+
+.button.number:hover {
+    background-color: #d99000;
+}
+
+.button.operator {
+    background-color: #587594;
+    color: #fff;
+}
+
+.button.operator:hover {
+    background-color: #0069d9;
+}
+
+.button.clear, .button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.button.clear:hover, .button.delete:hover {
+    background-color: #c82333;
+}
+
+.button.equal {
+    background-color: #29a195;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.button.equal:hover {
+    background-color: #218838;
+}
